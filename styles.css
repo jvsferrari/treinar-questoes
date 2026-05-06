@@ -1,0 +1,52 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.compoundBtn,
+#menu,
+.btns,
+label {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	display: flex;
+}
+
+#menu,
+body,
+html {
+	padding: 0;
+	margin: 0;
+	height: 100dvh;
+	width: 100dvw;
+	background-color: #ccc5b9;
+}
+
+.btns {
+	flex-direction: row;
+}
+
+label,
+button {
+	padding: 30px;
+	background-color: #403d39;
+	font-size: 30px;
+	border-radius: 30px;
+	width: 20dvw;
+	text-align: center;
+	color: #fffcf2;
+	height: 100%;
+	border: 0;
+	cursor: pointer;
+}
+
+input[type='file'] {
+	display: none;
+}
+
+h1 {
+	text-align: center;
+	font-size: 100px;
+	color: #403d39;
+	margin: 0;
+}

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<script src="script.js" defer></script>
+		<title>Treinar questões</title>
+	</head>
+	<body>
+		<div id="menu">
+			<h1>Treinar questões</h1>
+			<div class="btns">
+				<div class="compoundBtn">
+					<label for="folder"
+						>Selecione a pasta de imagens de questões</label
+					><input id="folder" type="file" webkitdirectory />
+				</div>
+				<button id="iniciar">Iniciar</button>
+				<div class="compoundBtn">
+					<label for="txt">Selecione a planilha com gabarito</label
+					><input id="txt" type="file" accept=".txt" />
+				</div>
+			</div>
+		</div>
+		<div id="quiz"></div>
+	</body>
+</html>
