@@ -4,8 +4,6 @@ menu = document.querySelector('#menu');
 iniciar = document.querySelector('#iniciar');
 quiz = document.querySelector('#quiz');
 
-txt.addEventListener('change', (event) => {});
-
 let questions = [];
 let answers = [];
 let imageFiles = [];
@@ -46,7 +44,7 @@ iniciar.addEventListener('click', () => {
 	}
 	Array.from(imageFiles).forEach((imageFile, index) => {
 		let imageElement = document.createElement('img');
-		imageElement.src = URL.createObjectLink(imageFile);
+		imageElement.src = URL.createObjectURL(imageFile);
 		imageElement.title = imageFile.name;
 		questions.push(genQuestion(index, imageElement, answers[index]));
 	});
