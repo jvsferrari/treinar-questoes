@@ -5,18 +5,21 @@
 .compoundBtn,
 #menu,
 .btns,
-label {
+label,
+#quiz,
+#imageField {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	display: flex;
 }
 
 #menu,
 body,
-html {
+html,
+#quiz {
 	padding: 0;
 	margin: 0;
+	border: 0;
 	height: 100dvh;
 	width: 100dvw;
 	background-color: #ccc5b9;
@@ -24,11 +27,11 @@ html {
 
 .btns {
 	flex-direction: row;
+	align-items: stretch;
 }
 
 label,
 button {
-	padding: 30px;
 	background-color: #403d39;
 	font-size: 30px;
 	border-radius: 30px;
@@ -38,6 +41,7 @@ button {
 	height: 100%;
 	border: 0;
 	cursor: pointer;
+	max-height: 150px;
 }
 
 input[type='file'] {
@@ -49,4 +53,49 @@ h1 {
 	font-size: 100px;
 	color: #403d39;
 	margin: 0;
+}
+
+.alternativa {
+	aspect-ratio: 1;
+	width: 10%;
+}
+
+img {
+	max-height: 60dvh;
+}
+
+#quiz {
+	/*display: none;*/
+}
+
+#imageField {
+	align-items: center;
+}
+
+#quiz button {
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	aspect-ratio: 1;
+}
+
+.move {
+	display: flex;
+	justify-content: space-around;
+}
+
+.move * {
+	width: 10%;
+}
+
+label,
+#menu button {
+	padding: 20px;
+}
+
+#numberDisplay {
+	position: fixed;
+	top: 30px;
+	left: 30px;
+	display: none;
 }
